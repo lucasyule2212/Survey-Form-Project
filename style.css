@@ -1,0 +1,239 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Dosis', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: rgb(26, 24, 24);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+h1,h3,h4{
+    font-family: 'Josefin Sans', sans-serif;
+}
+#nome,#email,#idade{
+    width: 50vw;
+    height: 4vh;   
+}
+input:focus{
+    outline: none;
+    background-color: orange;
+}
+input:focus::placeholder{
+    color: black;
+}
+select{
+    width: 40vw;
+    height: 4vh;
+}
+select:focus{
+    outline: none;
+    background-color: orange;
+}
+textarea{
+width: 80vw;
+height: 10vh;
+border-radius: 5px;
+}
+textarea:focus{
+    background-color: orange;
+    color: black;
+    outline: none;
+}
+textarea:focus::placeholder{
+    color: black;
+}
+
+button{
+    width: 55vw;
+    height: 5vh;
+    background-color: orange;
+    border: none;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+button:hover{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#description{
+    color: orange;
+    text-align: center;
+    width: 70%;
+}
+
+.decoration{
+    color: orange;
+}
+main{
+    height: auto;
+    display: flex;
+}
+.formBox{
+    display: flex;
+    flex-direction: column;
+    margin: 3vh;
+    align-items:flex-start;
+}
+#logogit{
+    width: 50%;
+}
+
+footer{
+    display: flex;
+    background-color: rgb(31, 30, 30);      
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+@media screen and (min-width: 451px){
+header{
+    margin: 20px;
+    min-width: 400px;
+}
+#title{
+    font-size: 5vw;
+ }
+ #description{
+    margin-top: 20px;
+    font-size: 4vw;
+}
+#decoration1{
+    margin-right: 0.5vw;
+}
+#decoration2{
+    margin-left: 0.5vw;
+}
+.decoration{
+    font-size: 4vw;
+}
+main{
+    width: 60%;
+    padding: 30px;
+    margin: 15px;
+    background-color: rgb(31, 30, 30); 
+    flex-direction: row;
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 30px;
+}
+label{
+    font-size: 2vw;
+    margin-top: 15px;
+    display: block;
+    text-align: justify;
+}
+#escolaridade, #plataformas{
+    align-items: flex-start;
+}
+#coments{
+    font-size: 2vw;
+    width: 100%;
+    text-align: justify;
+
+}
+h3{
+    font-size: 2vw;
+    text-align: left;
+    margin-bottom: 5px;
+}
+h4{
+    margin-bottom: 5px;
+}
+span{
+    font-size: 2vw;
+}
+#footertext{
+    font-family: 'Dosis', sans-serif;
+}
+footer{
+    padding: 15px;
+    margin-top: 60px;
+    gap: 5px;
+    height: 10vh;
+}
+button{
+    height: 6vh;
+    width: 30vw;
+    font-size: 2vw; 
+}
+#button{
+ display: flex;
+ margin: auto;
+}
+
+
+}
+@media screen and (max-width: 450px){
+    header{
+        margin: 10px;
+        min-width: 250px;
+    }
+    #title{
+       font-size: 8vw;
+    }
+    #description{
+        margin-top: 10px;
+        font-size: 5vw;
+        color: orange;
+    }
+    #decoration1{
+        margin-right: 10px;
+    }
+    #decoration2{
+        margin-left: 10px;
+    }
+    main{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        /* border-style: solid;
+        border-color: orange;
+        border-width: 2px;
+        border-radius: 5px; */
+        /* background-color: rgb(48, 48, 48); */
+    }
+    label{
+        margin-top: 15px;
+        display: block;
+        text-align: center;
+    }
+    
+    #escolaridade, #plataformas{
+        align-items: center;
+    }
+    #coments{
+        font-size: 4.7vw;
+    }
+    h3{
+        font-size: 5vw;
+        text-align: justify;
+        margin-bottom: 5px;
+    }
+    h4{
+        margin-bottom: 5px;
+    }
+    span{
+        font-size: 4vw;
+    }
+    footer{
+        margin-top: 20px;
+    }
+    #footertext{
+        font-size: 4vw;
+        font-family: 'Dosis', sans-serif;
+    }
+}

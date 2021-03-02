@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1 class="decoration" id="decoration1"><</h1>
+      <h1 id="title">Formulário de Devs</h1>
+      <h1 class="decoration" id="decoration2">/></h1>
+      <p id="description">Nos conte um pouco sobre o Dev que existe em você!</p>
+    </header>
+
+    <main>
+
+     <div class="formBox" id="infos">
+      <form action="">
+        <label for="name">Seu nome</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Digite seu nome..."
+        />
+        <label for="email">Seu e-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite seu melhor e-mail..."
+        />
+        <label for="idade">Sua idade</label>
+        <input
+          type="number"
+          name="idade"
+          id="idade"
+          placeholder="Digite sua idade..."
+        />
+      </div>
+
+        <div class="formBox" id="escolaridade">
+        <h3>Qual sua escolaridade atualmente?</h3>
+        <select name="escolaridade" id="escolaridade">
+          <option value="" disabled selected>Selecione</option>
+          <option value="estudante">Estudante</option>
+          <option value="clt">Trabalho CLT</option>
+          <option value="estagio">Estágio</option>
+          <option value="outro">Outros</option>
+        </select>
+        </div>
+
+        <div class="formBox" id="atuacao">
+          <h3 id="atuacao">
+            Agora me fala, você recomendaria a sua área de atuação para um
+            iniciante?
+          </h3>
+          <label>
+            <input type="radio" name="recomenda" value="sim" checked />
+            Sim, com certeza!
+          </label>
+          <label>
+            <input type="radio" name="recomenda" value="talvez" />
+            Talvez, mas alertando para os desafios.
+          </label>
+          <label>
+            <input type="radio" name="recomenda" value="nao" />
+            Definitivamente não!
+          </label>
+        </div>
+
+        <div class="formBox" id="plataformas">
+         <h3>Qual sua forma de estudos preferida?</h3>
+         <select name="plataformas" id="plataformas">
+             <option value="" disabled selected>Selecione</option>
+             <option value="livros">Livros</option>
+             <option value="doc">Documentaçoes</option>
+             <option value="cursos">Cursos online</option>
+             <option value="plataformas">Plataformas online</option>
+         </select>
+        </div>
+
+        <div class="formBox" id="areas">
+            <h3>Diz aí, quais as áreas que você mais se identifica:<span> (Pode selecionar mais de uma)</span></h3>    
+            <label for="front">
+                <input type="checkbox" name="front" id="front">
+                Front-End            
+            </label>
+            <label for="back">
+                <input type="checkbox" name="back" id="back">
+                Back-End            
+            </label>
+            <label for="data">
+                <input type="checkbox" name="data" id="data">
+                Análise de Dados          
+            </label>
+            <label for="machine">
+                <input type="checkbox" name="machine" id="machine">
+                Machine Learning           
+            </label>
+            <label for="mobile">
+                <input type="checkbox" name="mobile" id="mobile">
+                Dev Mobile           
+            </label>
+            <label for="safe">
+                <input type="checkbox" name="safe" id="safe">
+                Segurança da Informaçao           
+            </label>
+            <label for="sup">
+                <input type="checkbox" name="sup" id="sup">
+                Suporte           
+            </label>
+            <label for="outros">
+                <input type="checkbox" name="outros" id="outros">
+                Outros           
+            </label>
+        </div>
+
+        <div class="formBox" id="coments">
+            <h3>Por último e não menos importante...</h3>
+            <br>
+            <h4>Conta pra gente um pouco da tua jornada no mundo da programação: <span>(Opcional)</span></h4>
+
+            <textarea name="coments" id="coments" placeholder="Digite aqui..."></textarea>
+        </div>
+
+        <div id="button">
+            <button type="enviar" id="enviar">
+                Envie suas respostas!
+            </button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+        <a href="https://github.com/lucasyule2212"><img id="logogit" src="Assets/github.png" alt="Logo GitHub">
+       </a>
+            <h4 id="footertext">Created by Lucas Yule</h4>
+        
+    </footer>
+  </body>
+</html>
